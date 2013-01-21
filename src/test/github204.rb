@@ -9,4 +9,4 @@ class X
   end
 end
 
-raise "wrong name" unless Class.new(X).name =~ /#<Class:0x[a-f0-9]+>/
+raise "wrong name" unless Class.new(X).inspect =~ /#<Class:0x[a-f0-9]+>/
